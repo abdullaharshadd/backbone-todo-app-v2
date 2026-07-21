@@ -1,40 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Minimal Backbone Todo</title>
-    <style>
-        body { font-family: sans-serif; max-width: 400px; margin: 40px auto; }
-        .done { text-decoration: line-through; color: #888; }
-        li { margin: 8px 0; }
-        button { margin-left: 10px; cursor: pointer; }
-    </style>
-</head>
-<body>
-
-    <div id="todoapp">
-        <h1>Todos</h1>
-        <form id="todo-form">
-            <input type="text" id="new-todo" placeholder="What needs to be done?" required>
-            <button type="submit">Add</button>
-        </form>
-        <ul id="todo-list"></ul>
-    </div>
-
-    <!-- Underscore Template for a single Todo item -->
-    <script type="text/template" id="item-template">
-        <input type="checkbox" class="toggle" <%= done ? 'checked' : '' %>>
-        <span class="<%= done ? 'done' : '' %>"><%= title %></span>
-        <button class="destroy">Delete</button>
-    </script>
-
-    <!-- Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone-localstorage/1.1.16/backbone.localStorage-min.js"></script>
-
-    <!-- Application Logic -->
-    <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Migrated App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
